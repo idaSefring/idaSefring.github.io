@@ -1,0 +1,208 @@
+
+/* hovedfarger som kan endres*/
+:root{
+    --textColor: #FFF; 
+    --navColor: #061224;
+    --pinkColor:#dec9e9;
+}
+
+p{
+    line-height: 1.5;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*Navbaren som er lik på begge sidene*/
+#nav{
+    grid-area: navb;
+
+    background-color: var(--navColor);
+
+    padding: 0.5em;
+    margin: 0;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    
+    font-family: 'Ubuntu', sans-serif;
+    list-style-type:none;
+    color: var(--textColor);
+    text-align: center;
+
+}
+#nav li{
+    padding: 1em;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: var(--textColor);
+    text-decoration: none;
+}
+#nav li:hover{
+    border-bottom: solid 1px var(--textColor);
+}
+
+
+/*PC-VERSJON*/
+@media(orientation:landscape){
+    body{
+        margin: auto;
+        width: 100vw;
+        min-height: 100vh;
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 300px 200px 300px 430px 125px;
+        grid-template-areas: 
+        " navb "
+        " main "
+        " texB "
+        " arb1 "
+        " arb2 "
+        " foot ";
+   
+}
+#disco{
+    position: relative;
+    left: 30em;
+    top: -0.2em;
+}
+#main h1{
+    position: relative;
+    top: -1em;
+}
+
+#textBox{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+#textBox p{
+    border-left: solid black 1.5px;
+    padding-left: 0.75em;
+}
+
+#arbeid1{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+#arbeid2{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5em;
+}
+
+}
+
+
+
+/* MOBIL-VERSJON*/
+@media(orientation:portrait){
+    body{
+        margin: auto;
+        width: 100vw;
+        min-height: 100vh;
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 6em 250px 275px 330px 470px 125px;
+        gap: 10px;
+        grid-template-areas: 
+        " navb"
+        " main"
+        " texB"
+        " arb1"
+        " arb2"
+        " foot";
+}
+#disco{
+    position: relative;
+    left: 9em;
+    top: -6.8em;
+}
+#main h1{
+    position: relative;
+    top: -1em;
+}
+
+#textBox{
+    text-align: center;
+}
+
+#arbeid2{
+    margin-bottom: 3.5em;
+}
+#arbeid2 img{
+    margin: 0.75em;
+}
+}
+
+/*Generell styling på begge sider*/
+
+#main{
+    grid-area: main;
+
+    text-align: center;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+}
+#main h1{
+    font-size: 5em;
+}
+#main p{
+    font-size: 1.3em;
+
+    position: relative;
+    top: -5em;
+}
+
+#textBox{
+    grid-area: texB;
+    padding: 1em;
+
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+
+#arbeid1{
+    grid-area: arb1;
+    padding: 1em;
+    text-align: center;
+    background-color: var(--pinkColor);
+}
+
+
+#arbeid2{
+    grid-area: arb2;
+    text-align: center;
+    background-color: var(--pinkColor);
+
+    margin-top: 3em;
+    padding: 2em;
+}
+
+
+
+/*Footer som er lik på begge sidene*/
+footer{
+    grid-area: foot;
+    background-color: var(--navColor);
+
+    padding: 0.5em;
+
+    color: var(--textColor);
+    text-align: center;
+    font-size: 1em;
+}
+footer ul{
+    list-style-type: none;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5;
+    font-size: 1.2em;
+}
+footer a:hover{
+    color: coral;
+}
+

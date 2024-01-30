@@ -1,0 +1,253 @@
+
+/* hovedfarger som kan endres*/
+:root{
+    --textColor: #FFF;
+    --navColor: #061224;
+    --pinkColor:#dec9e9;
+}
+
+p{
+    line-height: 1.5;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*Navbaren som er lik på begge sidene*/
+#nav{
+    grid-area: navb;
+
+    background-color: var(--navColor);
+
+    padding: 0.5em;
+    margin:0;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    list-style-type:none;
+    color: var(--textColor);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+#nav li{
+    padding: 1em;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: var(--textColor);
+    text-decoration: none;
+}
+#nav li:hover{
+    border-bottom: solid 1px var(--textColor);
+}
+
+
+
+/*PC-VERSJON*/
+@media(orientation:landscape){
+    body{
+        margin: auto;
+        width: 100vw;
+        min-height: 100vh;
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px 550px 380px 100px 400px 125px;
+        grid-template-areas: 
+        " navb navb"
+        " main main"
+        " oveL righ"
+        " parx parx"
+        " undL undR"
+        " foot foot";
+   
+}
+/*T for Tekst, B for Bilde*/
+/*Divene med innhold er over eller under Paralaxe-greia, left eller right*/
+
+p{font-size: 1.2em;}
+
+#disco{
+    position: relative;
+    left: 30em;
+    top: -1.2em;
+}
+#unicorn{
+    position: relative;
+    left: -28em;
+    top: -7em;
+}
+
+#main h1{
+    font-size: 5em;
+    position: relative;
+    top: -1em;
+}
+
+#leftOverT p{
+    margin-top: 4em;
+    margin-left: 3em;
+    margin-bottom:4em ;
+
+    border-left: solid 1.5px black;
+    padding-left: 1em;
+    text-align: left;
+}
+
+#rightUnderT p{
+    margin-top: 3em;
+
+    border-left: solid 1.5px black;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: left;
+    
+}
+#leftUnderB{
+    padding: 1em;
+    margin-top: 5em;
+}
+/*Skyer som kun er på mobilversjon*/
+#clouds{display: none;}
+
+}
+
+
+/*MOBIL-VERSJON*/
+@media(orientation:portrait){
+    body{
+        margin: auto;
+        width: 100vw;
+        min-height: 100vh;
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 6em 18em 11em 25em 8em 17em 30em 7em;
+        gap: 10px;
+        grid-template-areas: 
+        " navb"
+        " main"
+        " oveL"
+        " righ"
+        " parx"
+        " undR"
+        " undL"
+        " foot";
+}
+
+#disco{
+    position: relative;
+    left: 9em;
+    top: -7.8em;
+}
+
+/*Enhjørningen som kun vises på pc-versjon*/
+#unicorn{display: none;}
+
+#main h1{
+    font-size: 3em;
+    position: relative;
+    top: -2em;
+}
+#leftOverT{
+    text-align: center;
+}
+
+#rightUnderT{
+    padding: 1em;
+    text-align: center;
+}
+
+#leftUnderB{
+    position: relative;
+    left: 2.8em;
+}
+
+/*Grafen som kun er på pc-versjon*/
+#graf{display: none;}
+
+}
+
+
+/*Generell styling på begge sidene*/
+
+#main{
+    grid-area: main;
+
+    min-height: 20em;
+    padding: 1em;
+
+    text-align: center;
+    position: relative;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+}
+#main p{
+    font-family: 'Rubik Doodle Shadow', system-ui;
+}
+
+/*Teksten under overskriften (kort), ikke infoteksten under*/
+#underText{
+    font-size: 1.3em;
+    font-weight: bold;
+
+    position: relative;
+    top: -4em;
+}
+
+#leftOverT{
+    grid-area: oveL;
+    padding:1em;
+}
+
+/*Speilbilde*/
+#rightOverB{
+    grid-area:righ ;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+
+
+#paralaxe{
+    grid-area: parx;
+    background-image: url(pexels-photo-lilla.jpeg);
+    background-attachment: fixed;
+}
+
+
+#rightUnderT{
+    grid-area: undR;
+    position: relative;
+    top: 4em;
+    margin-bottom: 2em;
+}
+
+/*Har forskjellig bilde her på begge sidene så de er stylet
+i hver sin grid-greie og fjernet i den andre*/
+#leftUnderB{ grid-area: undL;}
+
+
+/*Footer som er lik på begge sidene*/
+footer{
+    grid-area: foot;
+    background-color: var(--navColor);
+    color: var(--textColor);
+    padding: 0.5em;
+    text-align: center;
+}
+footer ul{
+    list-style-type: none;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.5;
+}
+footer a:hover{
+    color: coral;
+}
+
+
+    
