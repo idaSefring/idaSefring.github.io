@@ -1,6 +1,7 @@
 heihei 
-Linken til siden: https://idasefring.github.io
-Den åpnes penest i Google Crome;)
+Linken til siden: https://idasefring.github.io/
+
+Den åpnes best i Google Crome;)
 
 Diskokule: https://www.flaticon.com/free-icon/disco-ball_2809603
 
