@@ -1,6 +1,6 @@
 heihei 
 Linken til siden: https://idasefring.github.io
-Den åpnes penest i Google Crome og man må trykke seg til arbeid-siden og tilbake til main for å få opp alle bildene;)
+Den åpnes penest i Google Crome;)
 
 Diskokule: https://www.flaticon.com/free-icon/disco-ball_2809603
 
