@@ -1,0 +1,193 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#wrapper{
+   height: 100%;
+    background-color: aliceblue;
+    position: relative;
+    overflow: hidden;
+}
+p{
+    color: black;
+    line-height: 1.7;
+}
+
+
+h1{
+    position: absolute;
+    left: 540px;
+    top: 160px;
+
+    color: azure;
+    font-size: 6em;
+    font-family: "Jersey 20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#gronnAlien{
+    margin: 30px;
+    position: relative;
+    top: 30px;
+    left: 90px;
+    padding-bottom: 150px;
+    z-index: 1;
+
+    
+}
+
+#romskip{
+    position: relative;
+    left: -320px;
+    top: 50px;
+    rotate: 25deg;
+}
+
+#svartSirkel{
+    position: absolute;
+    top: -10px;
+    left: 432px;
+    margin: 2em;
+}
+
+/*Første div med en slags innledning og bilde under*/
+#sortHull1{
+    margin: auto;
+    padding-bottom: 2em;
+    padding-top: 7em;
+    width: 60vw;
+    text-align: left;
+}
+#sortHull1 p{
+    padding-bottom: 2em;
+}
+#sortHull1 img{
+    margin: auto;
+}
+
+#NASA{
+    color: black;
+    text-decoration: none;
+}
+#NASA:hover{
+    color: cornflowerblue;
+}
+#orkerikke{
+    position: absolute;
+    top: 87em;
+    left: 58em;
+}
+
+
+/*Andre div med info om et eller annet*/
+#sortHull2{
+    margin: auto;
+    padding-bottom: 2em;
+ 
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+/*Tredje avsnitt*/
+
+#sortHull3{
+    margin: auto;
+    padding-bottom: 2em;
+ 
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+#saturn{
+    position: absolute;
+    top: 106.5em;
+    left: 1em;
+}
+
+/*Fjerde avsnitt*/
+#sortHull4{
+    margin: auto;
+    padding-bottom: 2em;
+ 
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+}
+
+#cygnus{
+    position: absolute;
+    top: 128em;
+    left: 58em;
+}
+
+#chandra{
+    text-decoration: none;
+    color: black;
+}
+#chandra:hover{
+    color: cornflowerblue;
+    
+}
+
+/*Avsnitt fem*/
+
+#sortHull5{
+    margin: auto;
+    padding-bottom: 2em;
+ 
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#astronaut{
+    position: absolute;
+    top: 215em;
+    left: 54.5em;
+    transform: scaleX(-1);
+}
+
+
+
+/*Ordliste nederst på siden*/
+#begreper{
+    margin: auto;
+    width: 60vw;
+}
+dl{
+    margin: auto;
+    padding: 1em;
+    line-height: 1.5;
+}
+dt{
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+/*Footer HELT neders, kanskje ha et mørkt bakgrunnsbilde*/
+
+footer{
+    height: 70px;
+    background-image: url(Bilder/galaxy_footer.jpeg);
+    background-position: cover;
+    background-position: 20%;
+
+    
+}
+footer p{
+    color: aliceblue;
+    font-size: large;
+}
+footer a{
+    color: aliceblue;
+}
+footer a:hover{
+    color:cornflowerblue;
+}
